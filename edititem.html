@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Ellaine Anagaran</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="additem.html">ADD ITEM</a></li>
+                <li><a href="edititem.html">EDIT ITEM</a></li>
+                <li><a href="deleteitem.html">DELETE ITEM</a></li>
+                
+            </ul>
+        </nav>
+    </div> 
+    
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-half">
+                <div class="box">
+                    <h1 class="title has-text-centered">EDIT ITEM</h1>
+                    <form action="edititem.html" method="POST" class="edit-item-form">
+                        <div class="field">
+                            <label class="label">Item Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Enter item name" name="item-name" 
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Description</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Enter item description" name="item-description" rows="4" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Price</label>
+                            <div class="control">
+                                <input class="input" type="number" placeholder="Enter item price" name="item-price" value= min="0" step="0.01" required>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped is-grouped-centered">
+                            <div class="control">
+                                <button type="submit" class="button is-primary">Save Changes</button>
+                            </div>
+                            <div class="control">
+                                <button type="button" class="button is-light">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

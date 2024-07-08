@@ -1,0 +1,111 @@
+/* Reset some default margin and padding */
+body, html {
+    margin: 20px;
+    padding: 20px;
+    background-color:#D09CFA;
+}
+
+/* Basic styling for the sidebar */
+.sidebar {
+    background-color: #704264;
+    color: #dae2e7;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+.logo {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #ebe6e6;
+    text-decoration: none;
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #555;
+}
+
+.sidebar-nav ul li a.active {
+    background-color: #e4397b;
+}
+
+/* Styling for the content area */
+.content {
+    margin-left: 250px; /* Same width as sidebar to avoid overlap */
+    padding: 20px;
+}
+
+.add-item-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.add-item-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.add-item-form {
+    background-color: #eba7e5;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.button.is-primary {
+    background-color: #3de9e9;
+    color:  #e1e7e7;
+}
+
+.button.is-primary:hover {
+    background-color: #0056b3;
+}
